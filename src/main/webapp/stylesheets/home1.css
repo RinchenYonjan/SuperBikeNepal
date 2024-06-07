@@ -1,0 +1,203 @@
+/* importing google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* for all */
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* body */
+body {
+	background: #081b29;
+    color: #ededed;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    position: relative;
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.logo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover, 
+.navbar a.active {
+    color:  #00abf0;
+}
+
+.container{
+    margin-top: 7%;
+}
+
+.slideshow-container {
+    max-width: auto;
+    position: relative;
+    margin: auto;
+}
+
+.slideshow { 
+    display: none;
+}
+
+.slideshow img {
+    width: 100%;
+    height: 680px;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.dot-container {
+    position: absolute;
+    align-items: center;
+    padding: 20px;
+    margin-top: -60px;
+    margin-left: 50%;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    align-items: center;
+    background-color: #454545;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+    transition: background-color 0.3s ease;
+}  
+
+.active .dot{
+    background-color: #ededed;
+}
+
+.lower-buttons {
+    position: relative;
+    margin-top: -80px;
+    display: flex;
+    justify-content: flex-end;;
+}
+
+a.view-button {
+    background-color: #007bff; 
+    color: #fff;
+    margin-right: 15px;
+    display: inline-block;
+    padding: 5px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+ 
+.login-button input{
+	height: 60px;
+	width: 120px;
+	background-color: #2e8b57; 
+    color: #fff;
+    font-size: 16px;
+    margin-right: 25px;
+    transition: background-color 0.3s, color 0.3s;
+} 
+
+.login-button input:hover{
+	background-color: transparent;
+} 
+
+.lower-buttons a:hover {
+    background-color: transparent; 
+}
+
+.product-type {
+    padding: 100px 100px;
+    position: absolute; 
+    display: block;   
+    cursor: default;
+}
+
+.bike-product {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 200px;
+}
+
+.row-2 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.column-4 {
+    text-align: center;
+    cursor: pointer;
+}
+
+.column-4 img {
+    height: 200px;
+    width: 250px;
+}
+
+.column-4 img:hover{
+    transform: translateY(-5px);
+}
+
+.page-footer {
+    margin-top: 1200px;
+}
+
+
+
+/* LOGO ANIMATION */
+@keyframes showRight {
+    100% { 
+        width: 0;
+    }
+}
+
