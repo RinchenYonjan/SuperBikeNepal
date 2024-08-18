@@ -6,9 +6,9 @@
 <!--  These tags indicate a script let in JSP. Code inside these tags is executed on the server side. -->
 <!-- The context path of the web application. The context path represents the root of the application's URL space. -->
 <%
-HttpSession userSession=request.getSession(); 
-String currentUser=(String)userSession.getAttribute("username"); 
-String contextPath=request.getContextPath();
+HttpSession userSession = request.getSession(); 
+String currentUser = (String)userSession.getAttribute("username"); 
+String contextPath = request.getContextPath();
 String uri = request.getRequestURI();
 %>
 
@@ -21,7 +21,7 @@ String uri = request.getRequestURI();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Super Bike Nepal</title> <!-- title name -->
-    <link href="${pageContext.request.contextPath}/stylesheets/home1.css" rel="stylesheet">
+    <link href="${pageContext.request.contextPath}/stylesheets/home2.css" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
@@ -36,6 +36,7 @@ String uri = request.getRequestURI();
             <a href="../pages/home.jsp" class="active">Home</a>
             <a href="../pages/specification.jsp">Specification</a>
             <a href="../pages/order.jsp">Order</a>
+            <a href="../pages/cart.jsp">Cart</a>
             <a href="../pages/contact.jsp">Contact</a>
         </nav>
         
@@ -65,7 +66,6 @@ String uri = request.getRequestURI();
 
         </div>
 
-        
         <!-- slide show dots -->
         <div class="dot-container">
             <span class="dot" onclick="currentSlide(1)"></span>
@@ -95,17 +95,18 @@ String uri = request.getRequestURI();
    													} else { 			
     	 												out.print("Login Now"); }%>"/>
         			</div>
-            
             	</form>
-        
+            	
         </div> 
 
     </div>
+
 
     <!-- Product Type Heading  -->
     <div class= "product-type">
         <h2>Product Type</h2>
     </div>
+
 
     <!-- Bikes -->
     <div class="bike-product">
@@ -172,5 +173,8 @@ String uri = request.getRequestURI();
 
 </body>
 </html>
+
+
+
 
 

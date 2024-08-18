@@ -34,6 +34,7 @@ String successParam = request.getParameter(StringUtils.SUCCESS);
             <a href="../pages/home.jsp">Home</a>
             <a href="../pages/specification.jsp">Specification</a>
             <a href="../pages/order.jsp">Order</a>
+            <a href="../pages/cart.jsp">Cart</a>
             <a href="../pages/contact.jsp">Contact</a>
         </nav>
         

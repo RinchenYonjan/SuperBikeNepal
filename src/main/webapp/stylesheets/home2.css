@@ -68,7 +68,7 @@ body {
 }
 
 .slideshow-container {
-    max-width: auto;
+    max-width: 100%;
     position: relative;
     margin: auto;
 }
@@ -99,15 +99,15 @@ body {
     height: 12px;
     width: 12px;
     align-items: center;
-    background-color: #454545;
+    background-color: #081b29;
     border-radius: 50%;
     display: inline-block;
     margin-right: 8px;
     transition: background-color 0.3s ease;
 }  
 
-.active .dot{
-    background-color: #ededed;
+.dot.active{
+    background-color: #ffffff;
 }
 
 .lower-buttons {

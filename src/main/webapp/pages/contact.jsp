@@ -26,6 +26,7 @@
             <a href="home.jsp">Home</a>
             <a href="specification.jsp">Specification</a>
             <a href="order.jsp">Order</a>
+            <a href="../pages/cart.jsp">Cart</a>
             <a href="contact.jsp" class="active">Contact</a>
         </nav>
         

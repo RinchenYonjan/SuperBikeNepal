@@ -49,8 +49,7 @@ public class RegisterStudentServlet extends HttpServlet {
 	 * @throws IOException      if an I/O error occurs.
 	 */
 	@Override
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) 
-			throws ServletException, IOException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 		// Extract student information from request parameters
 		String username = request.getParameter(StringUtils.USERNAME);
@@ -82,7 +81,7 @@ public class RegisterStudentServlet extends HttpServlet {
 			
 			// Get the image file name from the student object (assuming it was extracted earlier)
 			String fileName = user.getImageUrlFromPart();
-
+z
 			// Check if a filename exists (not empty or null)
 			if (!fileName.isEmpty() && fileName != null) {
 			  // Construct the full image save path by combining the directory path and filename
